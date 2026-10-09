@@ -32,6 +32,5 @@ export class Product {
         console.log("Category:", this.category);
         console.log("Price:", this.price);
         console.log("Discounted Price:", this.getPriceWithDiscount());
-
     }
 }
