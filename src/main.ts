@@ -8,6 +8,9 @@ async function main(): Promise<void> {
 
     console.log("Total products:", data.length);
 
+   // Test NetworkError: // "https://invalid.example.invalid/products" 
+   // Test ProductError: // "https://dummyjson.com/invalid"
+
     for (const item of data) {
       const product = new Product(
         item.id,
@@ -21,8 +24,10 @@ async function main(): Promise<void> {
       product.displayDetails();
     }
   } catch (error: unknown) {
-    if (error instanceof ProductError) {
-      console.log("Product Error:", error.message);
+    if (error instanceof NetworkError) {
+      console.log("Network Error:", error.message);
+    } else if (error instanceof ProductError) {
+        console.log("Product Error:", error.message);
     } else {
      console.log("Error:", error);
     }
