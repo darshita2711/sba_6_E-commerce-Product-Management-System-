@@ -1,6 +1,6 @@
 import { calculateDiscount } from "../utils/discountCalculator.js";
 
-
+// Create a Product class to store and manage product information.
 export class Product {
     id: number;
     title: string;
@@ -19,11 +19,13 @@ export class Product {
         this.category = category;
     }
 
+    // Calculate the final price after applying the discount
     getPriceWithDiscount() {
         let discount = calculateDiscount(this.price, this.discountPercentage)
         return this.price - discount;
     }
-
+    
+    // Display all product details 
     displayDetails() {
         console.log("..........Product Details..........")
         console.log("Id:", this.id);

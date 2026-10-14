@@ -10,6 +10,8 @@ export async function fetchProducts(): Promise<any[]> {
     // const url ="https://invalid.example.invalid/products"
     // const url = "https://dummyjson.com/invalid"
 
+
+    // url for api
     const url ="https://dummyjson.com/products"
     const response = await fetch(url);
 

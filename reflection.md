@@ -1,6 +1,6 @@
 ## E-commerce Product System
 
-A TypeScript project that fetches product information from an API.
+this project fetches product information from an API.
 
 ## Reflection
 - I used TypeScript and OOP concepts to create a Product class and methods to display product details and calculate discounts and taxes.

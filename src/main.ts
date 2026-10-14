@@ -34,4 +34,5 @@ async function main(): Promise<void> {
   }
 }
 
+// Call the main function to start the program.
 main();
